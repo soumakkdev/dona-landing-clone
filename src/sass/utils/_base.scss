@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+:root {
+	--brand-blue: #008ffd;
+	--white: #ffffff;
+	--dark-grey: #19191b;
+	--grey: #616870;
+	--light-grey: #eceff2;
+
+	font-family: 'Inter', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+
+	color-scheme: light dark;
+	color: #151515;
+	background-color: #ffffff;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+input,
+button {
+	font-family: inherit;
+}

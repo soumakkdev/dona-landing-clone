@@ -1,0 +1,58 @@
+$justify: (
+	'start': flex-start,
+	'end': 'flex-end',
+	'center': 'center',
+	'between': space-between,
+	'around': space-around,
+	'evenly': space-evenly,
+);
+$align: (
+	'start': flex-start,
+	'end': 'flex-end',
+	'center': 'center',
+	'baseline': baseline,
+);
+$direction: (
+	'row': row,
+	'column': 'column',
+	'row-reverse': row-reverse,
+	'column-reverse': column-reverse,
+);
+
+.flex {
+	display: flex;
+}
+
+@each $key, $value in $direction {
+	.flex-#{$key} {
+		flex-direction: #{$value};
+	}
+}
+
+@each $key, $value in $justify {
+	.justify-#{$key} {
+		justify-content: #{$value};
+	}
+}
+
+@each $key, $value in $align {
+	.align-#{$key} {
+		align-items: #{$value};
+	}
+}
+
+.flex-1 {
+	flex: 1 1 0%;
+}
+.flex-wrap {
+	flex-wrap: wrap;
+}
+.flex-no-wrap {
+	flex-wrap: nowrap;
+}
+
+@for $i from 0 through 2 {
+	.gap-#{$i} {
+		gap: #{$i * 10}px;
+	}
+}

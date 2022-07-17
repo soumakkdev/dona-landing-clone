@@ -1,0 +1,39 @@
+$sides: (top, bottom, left, right);
+
+@for $i from 0 through 8 {
+	.m-#{$i} {
+		margin: #{$i * 4}px;
+	}
+	@each $side in $sides {
+		.m#{getFistLetter($side)}-#{$i} {
+			margin-#{$side}: #{$i * 4}px;
+		}
+	}
+	.mx-#{$i} {
+		margin-right: #{$i * 4}px;
+		margin-left: #{$i * 4}px;
+	}
+	.my-#{$i} {
+		margin-top: #{$i * 4}px;
+		margin-bottom: #{$i * 4}px;
+	}
+}
+
+@for $i from 0 through 8 {
+	.p-#{$i} {
+		padding: #{$i * 4}px;
+	}
+	@each $side in $sides {
+		.p#{getFistLetter($side)}-#{$i} {
+			padding-#{$side}: #{$i * 4}px;
+		}
+	}
+	.px-#{$i} {
+		padding-right: #{$i * 4}px;
+		padding-left: #{$i * 4}px;
+	}
+	.py-#{$i} {
+		padding-top: #{$i * 4}px;
+		padding-bottom: #{$i * 4}px;
+	}
+}

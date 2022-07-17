@@ -1,0 +1,3 @@
+@function getFistLetter($str) {
+	@return str-slice($str, 0, 1);
+}

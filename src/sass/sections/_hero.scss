@@ -1,0 +1,27 @@
+article {
+	margin: 100px 0;
+	h1 {
+		font-size: 84px;
+		color: var(--dark-grey);
+
+		span {
+			color: rgba(211, 215, 219, 0.5);
+		}
+	}
+
+	p {
+		font-size: 24px;
+		color: var(--dark-grey);
+		line-height: 1.45;
+		max-width: 60%;
+		font-weight: 500;
+		margin-top: 50px;
+	}
+
+	.cta-buttons {
+		display: flex;
+		align-items: center;
+		gap: 15px;
+		margin-top: 40px;
+	}
+}

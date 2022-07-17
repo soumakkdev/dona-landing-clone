@@ -1,0 +1,28 @@
+.btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-family: inherit;
+	font-size: 1rem;
+	font-weight: 500;
+	border: unset;
+	padding: 14px 26px;
+	border-radius: 100px;
+	line-height: 24px;
+	cursor: pointer;
+	user-select: none;
+
+	&-primary {
+		background-color: var(--brand-blue);
+		color: var(--white);
+	}
+	&-secondary {
+		background-color: var(--light-grey);
+		color: var(--dark-grey);
+	}
+
+	&-small {
+		font-size: 0.875rem;
+		padding: 6px 20px;
+	}
+}

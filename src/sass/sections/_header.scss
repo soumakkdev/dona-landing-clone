@@ -1,0 +1,12 @@
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2rem 1rem;
+
+	nav {
+		font-size: 14px;
+		color: var(--dark-grey);
+		font-weight: 500;
+	}
+}
